@@ -1,0 +1,87 @@
+/* General Style */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --darkLava: #463F3A;
+    --middleGrey: #8A817C;
+    --paleSilver: #BCB8B1;
+    --alabaster: #F4F3EE;
+    background-color: var(--alabaster);
+    color: var(--darkLava);
+    font-size: 10px;
+  }
+  blockquote{
+    background-color: whitesmoke;
+    border-left: 6px solid rgb(153, 151, 245);
+    padding: 1px 2.5rem;
+  }
+  footer{
+    text-align: left;
+    margin: 1rem;
+  }
+  header{
+    background-color: var(--middleGrey);
+    padding: 1rem;
+  }
+  h1{
+    color: #E0AFA0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+  }
+  
+  /* Scooped by ID */
+  
+  #image{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+  }
+  #img-caption{
+    color: var(--alabaster);
+    font-size: 1rem;
+    margin: 1rem;
+  }
+  #main{
+    text-align:center;
+  }
+  #tribute-info{
+    text-align: justify;
+    background-color: white;
+    font-size: 1rem;
+    margin: 3rem;
+    padding: 2.5rem 20% 2.5rem 20%;
+  }
+  /* Responsive */
+  @media(max-width:800px){
+    h1{
+      font-size: 2rem;
+    }
+    blockquote{
+      margin: 0;
+    }
+    #tribute-info{
+      padding: 5%;
+      margin: 0;
+    }
+  }
+  /* Scooped by Class*/
+  .dance{
+    animation: colorChange 1s linear 0s infinite;
+  }
+  /* animations */
+  @keyframes colorChange {
+    from {
+      color: rgb(129, 129, 199);
+    }
+    10% {
+      color: rgb(168, 180, 62);
+    }
+    50% {
+      color: rgb(88, 172, 88);
+    }
+    75% {
+      color: rgb(177, 111, 144);
+    }
+    100% {
+      color: rgb(218, 172, 74);
+    }
+  }
